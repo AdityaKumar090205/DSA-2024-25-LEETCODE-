@@ -1,0 +1,32 @@
+class Solution:
+    def find(self, dsuf, v):
+        if dsuf[v] == -1:
+            return v
+        dsuf[v] = self.find(dsuf, dsuf[v])
+        return dsuf[v]
+
+    def smallestEquivalentString(self, s1: str, s2: str, baseStr: str) -> str:
+        dsuf = [-1] * 26
+
+        # Step-1: Build Disjoint Joint equivalent sets (with smallest in each set as absolute parent)
+        for i in range(len(s1)):
+            if s1[i] == s2[i]:
+                continue
+
+            px = self.find(dsuf, ord(s1[i]) - ord('a'))
+            py = self.find(dsuf, ord(s2[i]) - ord('a'))
+            if px == py:
+                continue
+
+            # Union by smallest char as absolute parent
+            if px > py:
+                dsuf[px] = py
+            else:
+                dsuf[py] = px
+
+        # Step-2: Iterate for baseStr and find lexicographical smallest equivalent string
+        res = []
+        for c in baseStr:
+            parent = self.find(dsuf, ord(c) - ord('a'))
+            res.append(chr(parent + ord('a')))
+        return ''.join(res)

@@ -11,6 +11,6 @@ class Solution:
                 while cur==n or cur%10==9:
                     cur=cur//10
                 cur+=1
-        return res
+        return res 
 
         

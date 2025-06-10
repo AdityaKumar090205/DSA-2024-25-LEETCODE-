@@ -1,0 +1,13 @@
+class Solution:
+    def maxDifference(self, s: str) -> int:
+        f=collections.Counter(s)
+        INF=1000
+        max_odd=0
+        min_even=INF
+
+        for v in f.values():
+            if v % 2==0:
+                min_even=min(min_even,v)
+            else:
+                max_odd=max(max_odd,v)
+        return max_odd-min_even

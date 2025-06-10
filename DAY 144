@@ -10,4 +10,4 @@ class Solution:
                 min_even=min(min_even,v)
             else:
                 max_odd=max(max_odd,v)
-        return max_odd-min_even
+        return max_odd-min_even 

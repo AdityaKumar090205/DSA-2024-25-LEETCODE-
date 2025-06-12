@@ -5,4 +5,4 @@ class Solution:
         diff=0
         for i in range(l):
             diff=max(diff,abs(nums[i]-nums[i+1]))
-        return diff
+        return diff 

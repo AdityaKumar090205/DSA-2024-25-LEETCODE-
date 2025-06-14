@@ -1,0 +1,14 @@
+class Solution:
+    def minMaxDifference(self, num: int) -> int:
+        INF=10**20
+        mn=INF
+        mx=0
+
+        snum=str(num)
+        for i in range(0,10):
+            for j in range(0,10):
+                if i!=j:
+                    x=int(snum.replace(str(i),str(j)))
+                    mn=min(x,mn)
+                    mx=max(x,mx)
+        return mx-mn

@@ -11,4 +11,4 @@ class Solution:
                     x=int(snum.replace(str(i),str(j)))
                     mn=min(x,mn)
                     mx=max(x,mx)
-        return mx-mn
+        return mx-mn 

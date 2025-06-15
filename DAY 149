@@ -19,7 +19,7 @@ class Solution:
         else:
             for digit in s_num[1:]:
                 if digit not in '01':
-                    b=s_num.replace(digit,'0')
+                    b=s_num.replace(digit,'0') 
                     break
         return  int(a)-int(b)
 

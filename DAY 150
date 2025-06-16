@@ -7,5 +7,5 @@ class Solution:
         for i in nums:
             if mn<i:
                 best=max(best,i-mn)
-            mn=min(mn,i)
+            mn=min(mn,i) 
         return best

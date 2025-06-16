@@ -1,0 +1,11 @@
+class Solution:
+    def maximumDifference(self, nums: List[int]) -> int:
+        INF=10**20
+
+        mn=INF
+        best=-1
+        for i in nums:
+            if mn<i:
+                best=max(best,i-mn)
+            mn=min(mn,i)
+        return best

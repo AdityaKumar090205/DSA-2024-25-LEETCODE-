@@ -1,0 +1,12 @@
+class Solution:
+    def partitionArray(self, nums: List[int], k: int) -> int:
+        INF=10**20
+        nums.sort()
+        count=0
+        start=-INF
+        for i in nums:
+            if i-start>k:
+                count+=1
+                start=i
+        return count          
+        

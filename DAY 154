@@ -29,7 +29,7 @@ class Solution:
             mny=min(count[1],count[3])
 
             used=min(mny,ck)
-            mny-=used
+            mny-=used 
             ck-=used
             mxy+=used
 

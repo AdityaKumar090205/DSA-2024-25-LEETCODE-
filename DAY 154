@@ -1,0 +1,40 @@
+class Solution:
+    def maxDistance(self, s: str, k: int) -> int:
+        N=len(s)
+
+        directions=[
+            (1,0), #E
+            (0,1), #S
+            (-1,0), #W
+            (0,-1) #N
+        ]
+
+        ds="ESWN"
+        count=[0]*4
+        best=0
+        for i in s:
+            d=ds.index(i)
+            count[d]+=1
+
+            mxx=max(count[0],count[2])
+            mnx=min(count[0],count[2])
+
+            ck=k
+            used=min(mnx,ck)
+            mnx-=used
+            ck-=used
+            mxx+=used
+
+            mxy=max(count[1],count[3])
+            mny=min(count[1],count[3])
+
+            used=min(mny,ck)
+            mny-=used
+            ck-=used
+            mxy+=used
+
+            best=max(best,mxx-mnx+mxy-mny)
+        return best
+
+
+        

@@ -21,7 +21,7 @@ class Solution:
                 #v[right]-v[left]>k
                 #we want sum fromv[right].....v[len(v)-1]
             bigger=(prefix[len(v)]-prefix[right])-((v[left]+k)*(len(v)-(right)))
-            best=min(best,smaller+bigger)
+            best=min(best,smaller+bigger) 
         return best
     
 

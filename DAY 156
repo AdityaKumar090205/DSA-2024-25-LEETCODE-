@@ -7,5 +7,5 @@ class Solution:
 
         if len(ans[-1])<k:
             ans[-1]+=fill*(k-len(ans[-1]))
-        return ans
+        return ans 
         

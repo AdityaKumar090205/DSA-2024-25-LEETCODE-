@@ -16,5 +16,5 @@ class Solution:
         for v in f.values():
             if is_prime(v):
                 return True
-        return False
+        return False 
         

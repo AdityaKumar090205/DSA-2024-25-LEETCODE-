@@ -1,0 +1,20 @@
+class Solution:
+    def checkPrimeFrequency(self, nums: List[int]) -> bool:
+        f=collections.Counter(nums)
+
+        def is_prime(x):
+            if x<=1:
+                return False
+            j=2
+
+            while j*j<=x:
+                if x%j==0:
+                    return False
+                j+=1
+            return True
+
+        for v in f.values():
+            if is_prime(v):
+                return True
+        return False
+        

@@ -14,5 +14,5 @@ class Solution:
                 indices.popleft()
             
             if i<=rightmost:
-                ans.append(i)
+                ans.append(i) 
         return ans

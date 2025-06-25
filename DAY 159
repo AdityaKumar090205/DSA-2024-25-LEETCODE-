@@ -11,4 +11,4 @@ class Solution:
                 nums[l]=nums[r]
                 l+=1 
             r+=1
-        return l
+        return l 

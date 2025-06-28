@@ -5,7 +5,7 @@ class Solution:
         indexed_nums.sort(reverse=True, key=lambda x: x[0])
     
         # Only take top k and extract their indices
-        top_k_indices = sorted([i for _, i in indexed_nums[:k]])
+        top_k_indices = sorted([i for _, i in indexed_nums[:k]]) 
     
         # Step 2: Use sorted indices to collect original order elements
         return [nums[i] for i in top_k_indices]

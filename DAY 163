@@ -10,6 +10,6 @@ class Solution:
                 r-=1
             if i<=r:
                 res+=(2**(r-i))
-                res%=mod
+                res%=mod 
         return res
         

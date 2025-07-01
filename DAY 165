@@ -1,0 +1,15 @@
+class Solution:
+    def possibleStringCount(self, word: str) -> int:
+        total=0
+        streak=0
+
+        current=""
+        for x in (word):
+            if current==x:
+                streak+=1
+                total+=1
+            else:
+                current=x
+                streak=1
+        return total+1
+        

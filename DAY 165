@@ -11,5 +11,5 @@ class Solution:
             else:
                 current=x
                 streak=1
-        return total+1
+        return total+1 
         

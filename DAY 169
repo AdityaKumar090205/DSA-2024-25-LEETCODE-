@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int findLucky(vector<int>& arr) {
+        int res=-1;
+        map<int,int> mp;
+        for(auto x:arr){
+            mp[x]++;
+        }
+        for(auto &[k,v]: mp){
+            if(k==v){
+                res=max(res,k);
+            }
+        }
+        return res;
+    }
+};

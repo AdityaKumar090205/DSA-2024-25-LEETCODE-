@@ -7,7 +7,7 @@ public:
             mp[x]++;
         }
         for(auto &[k,v]: mp){
-            if(k==v){
+            if(k==v){ 
                 res=max(res,k);
             }
         }

@@ -7,7 +7,7 @@ public:
     FindSumPairs(vector<int>& nums1, vector<int>& nums2) {
         v1=nums1;//O(n)
         v2=nums2;//O(m)
-        for(int &x: v2){//O(m)
+        for(int &x: v2){//O(m) 
             mp[x]++;
         }
     }

@@ -3,7 +3,7 @@ public:
     int maxEvents(vector<vector<int>>& events) {
         int n=events.size();
 
-        sort(begin(events),end(events));//O(nlogn)
+        sort(begin(events),end(events));//O(nlogn) 
         priority_queue<int ,vector<int>, greater<int>>pq;//min-heap
         int day=events[0][0];
         int i=0;

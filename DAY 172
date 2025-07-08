@@ -5,7 +5,7 @@ public:
             return NULL;
         }
         unordered_map<Node*,Node*> m;
-        Node* newHead=new Node(head->val);
+        Node* newHead=new Node(head->val); 
         Node* oldTemp=head->next;
         Node* newTemp=newHead;
         m[head]=newHead;

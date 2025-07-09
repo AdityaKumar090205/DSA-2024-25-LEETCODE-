@@ -5,7 +5,7 @@ public:
         freeArray.push_back(startTime[0]);
 
         for(int i=1;i<startTime.size();i++){
-            freeArray.push_back(startTime[i]-endTime[i-1]);//free gap duration
+            freeArray.push_back(startTime[i]-endTime[i-1]);//free gap duration 
         }
         freeArray.push_back(eventTime-endTime[endTime.size()-1]);
 

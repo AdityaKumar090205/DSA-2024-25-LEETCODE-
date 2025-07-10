@@ -5,7 +5,7 @@ public:
 
         int i=0,j=0;
         int minL=INT_MAX;
-        int sum=0;
+        int sum=0; 
 
         while(j<n){
             sum+=nums[j];

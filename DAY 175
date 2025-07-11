@@ -7,7 +7,7 @@ public:
 
         for(int i=0;i<n;i++){
             string temp=strs[i];
-
+ 
             sort(begin(temp),end(temp));
             mp[temp].push_back(strs[i]);
         }  

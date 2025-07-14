@@ -5,7 +5,7 @@ public:
 
         while(head){
             res=(res<<1)|(head->val);
-            head=head->next;
+            head=head->next; 
         }
         return res;
     }

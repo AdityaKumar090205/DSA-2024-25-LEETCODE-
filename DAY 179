@@ -8,7 +8,7 @@ public:
         bool hasvowel=false;
         bool hascons=false;
 
-        for(char ch: word){
+        for(char ch: word){ 
             if(isalpha(ch)){
                 ch=tolower(ch);
                 if (ch=='a'|ch=='e'|ch=='i'|ch=='o'|ch=='u'){

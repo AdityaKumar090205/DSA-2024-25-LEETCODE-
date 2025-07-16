@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int maximumLength(vector<int>& nums) {
+        int n=nums.size();
+
+        int countEven=0;
+        int countOdd=0;
+
+        for(auto &num:nums){
+            if(num%2==0){
+                countEven++;
+            }else{
+                countOdd++;
+            }
+        }
+        int alternating=1;
+        int parity=nums[0]%2;
+        for(int i=1;i<n;i++){
+            int currParity=nums[i]%2;
+            if(currParity!=parity){
+                alternating++;
+                parity=currParity;
+            }
+        }
+        return max({countEven,countOdd,alternating}); 
+    }
+};

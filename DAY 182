@@ -7,7 +7,7 @@ public:
         vector<long long> leftMins(n), rightMaxs(n);
         priority_queue<int> maxLeftHeap; // max-heap for smallest k
         priority_queue<int, vector<int>, greater<int>> minRightHeap; // min-heap for largest k
-
+ 
         long long leftSum = 0, rightSum = 0, minDiff = LLONG_MAX;
 
         // Build leftMins

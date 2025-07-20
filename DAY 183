@@ -5,7 +5,7 @@ public:
 
         stringstream ss(path);
         stack<string> st;
-        while(getline(ss,token,'/')){
+        while(getline(ss,token,'/')){ 
             if(token==""|token==".") continue;
 
             if(token!=".."){

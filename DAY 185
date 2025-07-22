@@ -6,7 +6,7 @@ public:
         vector<int> cus(n, 0);
         cus[0] = nums[0];
         for(int i = 1; i < n; i++)
-            cus[i] = cus[i-1] + nums[i];
+            cus[i] = cus[i-1] + nums[i]; 
         
         vector<int> mp(10001, -1); //Using as a map 1 <= nums[i] <= 10^4
         int maxS   = 0;

@@ -5,7 +5,7 @@ public:
         int score = 0;
 
         string maxStr = (x > y) ? "ab" : "ba";
-        string minStr = (maxStr == "ab") ? "ba" : "ab"; 
+        string minStr = (maxStr == "ab") ? "ba" : "ab";  
 
         //First Pass
         string temp_first     = removeSubstring(s, maxStr);

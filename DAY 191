@@ -9,7 +9,7 @@ public:
         }
 
         if(t[idx][currOr] != -1) {
-            return t[idx][currOr];
+            return t[idx][currOr]; 
         }
 
         //Take nums[idx]

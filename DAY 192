@@ -10,7 +10,7 @@ public:
             for(int j = 0; j < 32; j++) {
                 if(!(nums[i] & (1 << j))) { 
                     if(setBitIndex[j] != -1) {
-                        endIndex = max(endIndex, setBitIndex[j]);
+                        endIndex = max(endIndex, setBitIndex[j]); 
                     }
                 } else {
                     setBitIndex[j] = i;

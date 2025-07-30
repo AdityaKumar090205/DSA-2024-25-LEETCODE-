@@ -11,7 +11,7 @@ public:
             streak=0;
         }
         if(maxVal==num){
-            streak++;
+            streak++; 
         }else{
             streak=0;
         }

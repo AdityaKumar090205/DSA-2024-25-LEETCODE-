@@ -5,7 +5,7 @@ public:
         unordered_set<int> curr;
         unordered_set<int> result;
 
-        for(int i = 0; i < arr.size(); i++) {
+        for(int i = 0; i < arr.size(); i++) { 
 
             for(const int& x : prev) {
                 curr.insert(x | arr[i]);
